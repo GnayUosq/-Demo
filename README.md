@@ -13,4 +13,3 @@
 ## 📂 技术实现简述
 - **Frontend**: React + TypeScript (Vite) 实现 UI 复现。
 - **Data Strategy**: 设计了基于 SQL 的台词清洗与评分权重过滤逻辑。
-- **Status**: 目前线上环境正在部署中，面试现场支持本地运行演示。
