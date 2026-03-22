@@ -1,20 +1,16 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 豆瓣影视“经典台词”模块优化方案 (Demo)
 
-# Run and deploy your AI Studio app
+## 📌 项目背景
+本项目为豆瓣产品实习面试作品。旨在解决用户在消费影视内容时，优质台词被淹没在海量短评中、缺乏结构化分发的问题。
 
-This contains everything you need to run your app locally.
+## 核心功能点
+1. **详情页 Tab 嵌入**：在“演职员”与“剧照”之间新增“台词”一级入口。
+2. **卡片化交互**：采用“剧照 + 金句”的视觉形式，提升内容消费效率。
+3. **策略化分发**：
+   - **排序逻辑**：$Score = w1 \cdot Rating + w2 \cdot Collections$（优先展示高分电影的高赞台词）。
+   - **语义搜索**：支持“8.5分以上+治愈系”的复合维度检索。
 
-View your app in AI Studio: https://ai.studio/apps/cf6ae014-c13f-4916-8ea6-65fe6293dcee
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📂 技术实现简述
+- **Frontend**: React + TypeScript (Vite) 实现 UI 复现。
+- **Data Strategy**: 设计了基于 SQL 的台词清洗与评分权重过滤逻辑。
+- **Status**: 目前线上环境正在部署中，面试现场支持本地运行演示。
